@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- untuk ngeload bootstrap css -->
+    <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css">
+    <!-- untuk ngeload css dari xzoom -->
+    <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css">
+    <!-- untuk manggil styling dari gijgo-->
+    <link rel="stylesheet" href="frontend/libraries/gijgo/css/gijgo.min.css">
+    <!-- untuk ngeload bootstrap main css -->
+    <link rel="stylesheet" href="frontend/styles/main.css">
+    <!-- untuk link ke google font -->
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200,400,700&&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="container">
+        <!-- untuk nampilin icon logo -->
+        <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+            <!-- untuk buat navigasi bar pk boostrap -->
+            <div class="navbar-nav ml-auto mr-auto mr-sm-auto mr-lg-0 mr-md-auto">
+                <a href="index.html" class="navbar-brand">
+                    <img src="frontend/images/logo.png" alt="">
+                </a>
+            </div>
+            <ul class="nabar-nav mr-auto d-none d-lg-block">
+                <!-- text muted ini dari bootstrap, cari tau sendiri -->
+                <span class="text-muted">
+                    | &nbsp Beyond the explorer of the world
+                </span>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="section-details-header"> </section>
+        <section class="section-details-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col p-0">
+                        <!-- membuat peta link saat ini - [breacumb nya bootstrap] -->
+                        <nav>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    Paket Travel
+                                </li>
+                                <li class="breadcrumb-item">
+                                    Details
+                                </li>
+                                <li class="breadcrumb-item active">
+                                    Checkout
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- ini untuk buat car detail KUALA LUMPUR -->
+                    <div class="col-lg-8 pl-lg-0">
+                        <div class="card card-details">
+                            <h1>
+                                Who is Going?
+                            </h1>
+                            <p>
+                                Trip to Kuala Lumpur, Malaysia
+                            </p>
+                            <div class="attendee">
+                                <!-- table ini dari boostrap -->
+                                <table class="table table-responsive-sm text-center">
+                                    <thead>
+                                        <tr>
+                                            <td>Picture</td>
+                                            <td>Name</td>
+                                            <td>Nationality</td>
+                                            <td>Visa</td>
+                                            <td>Passport</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- cara edit langsung ukuran gambar/poto -->
+                                        <tr>
+                                            <td>
+                                                <img src="frontend/images/avatar-1.png" alt="" height="60px">
+                                            </td>
+                                            <!-- kelas align middle ini bawaan bootstrap supaya tulisan kelas dan bawahnya ada space nya-->
+                                            <td class="align-middle">
+                                                David Gonzales
+                                            </td>
+                                            <td class="align-middle">
+                                                CN
+                                            </td>
+                                            <td class="align-middle">
+                                                N/A
+                                            </td>
+                                            <td class="align-middle">
+                                                Active
+                                            </td>
+                                            <td class="align-middle">
+                                                <a href="#" class="">
+                                                    <img src="frontend/images/ic_remove.png" alt="">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- ini gambar baris kedua -->
+                                        <tr>
+                                            <td>
+                                                <img src="frontend/images/avatar-5.png" alt="" height="60px">
+                                            </td>
+                                            <!-- kelas align middle ini bawaan bootstrap supaya tulisan kelas dan bawahnya ada space nya-->
+                                            <td class="align-middle">
+                                                Ucup Sebastian
+                                            </td>
+                                            <td class="align-middle">
+                                                USA
+                                            </td>
+                                            <td class="align-middle">
+                                                90 <span class="dashicons dashicons-yes"></span>
+                                            </td>
+                                            <td class="align-middle">
+                                                Active
+                                            </td>
+                                            <td class="align-middle">
+                                                <a href="#" class="">
+                                                    <img src="frontend/images/ic_remove.png" alt="">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- ini untuk nambah ADD MEMBER dan isi form -->
+                            <div class="member t-3">
+                                <h2>Add Member</h2>
+                                <form class="form-inline">
+                                    <!-- untuk kelas disabilitas jadi pk suara -->
+                                    <label for="inputUsername" class="sr-only">
+                                        Name
+                                    </label>
+                                    <input type="text" name="inputUsername" class="form-control mb-2 mr-sm-2"
+                                        id="inputUsername" placeholder="Username/placeholder">
+                                    <label for="inputVISA" class="sr-only">
+                                        Visa
+                                    </label>
+                                    <select name="inputVisa" id="inputVisa" class="custom-select mb-2 mr-sm-2">
+                                        <option value="VISA" selected>VISA</option>
+                                        <option value="30 Days">30 Days</option>
+                                        <option value="N/A">N/A</option>
+                                    </select>
+                                    <!-- ini bikin label date dari gijgo -->
+                                    <label for="doePassport" class="sr-only">DOE Passport</label>
+                                    <div class="input-group mb-2 mr-sm-2">
+                                        <input type="text" class="form-control datepicker" id="doePassport"
+                                            placeholder="DOE Passport">
+                                    </div>
+                                    <!-- membuat tombol ADD NOW pada member -->
+                                    <button type="submit" class="btn btn-add-now mb-2 px-4">
+                                        Add Now
+                                    </button>
+                                </form>
+
+                                <!-- cara nambah keterangan note -->
+                                <h3 class="mt-2 mb-0">Note</h3>
+                                <p class="disclamer mb-0">
+                                    You are only able to invite member that has registered in andtrips.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- untuk membuat kelas CARD yang KANAN -->
+                    <div class="col-lg-4">
+                        <div class="card card-details card-right">
+
+                            <h2>Checkout Information</h2>
+                            <!-- membuat tabel checkout information -->
+                            <table class="trip-informations">
+                                <!-- tr itu table row -->
+                                <tr>
+                                    <!--th itu table heading -->
+                                    <th width="50%">Members</th>
+                                    <!-- td itu table data, ini biasanya untuk heading, tambah class right spy tulisan rata kanan-->
+                                    <td width="50%" class="text-right">
+                                        3 person
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!--th itu table heading -->
+                                    <th width="50%">Additional VISA</th>
+                                    <!-- td itu table data, ini biasanya untuk heading, tambah class right spy tulisan rata kanan-->
+                                    <td width="50%" class="text-right">
+                                        $150,00
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!--th itu table heading -->
+                                    <th width="50%">Trip Price</th>
+                                    <!-- td itu table data, ini biasanya untuk heading, tambah class right spy tulisan rata kanan-->
+                                    <td width="50%" class="text-right">
+                                        $50,00/person
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!--th itu table heading -->
+                                    <th width="50%">Sub Total</th>
+                                    <!-- td itu table data, ini biasanya untuk heading, tambah class right spy tulisan rata kanan-->
+                                    <td width="50%" class="text-right">
+                                        $300,00
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!--th itu table heading -->
+                                    <th width="50%">Total (+Unique)</th>
+                                    <!-- td itu table data, ini biasanya untuk heading, tambah class right spy tulisan rata kanan-->
+                                    <td width="50%" class="text-right text-total">
+                                        <!-- bikin teks unique supaya berbeda, ini pake warna lain -->
+                                        <span class="text-blue">$300,</span>
+                                        <span class="text-orange">43</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <!-- ini untuk instruksi pembayaran -->
+                            <h2>Payment Instructions</h2>
+                            <p class="payment-instructions">
+                                Please complete your payment before to continue the wonderful trip
+                            </p>
+                            <!-- nambahkan bank dan nomor rekening -->
+                            <div class="bank">
+                                <div class="bank-item pb-3">
+                                    <img src="frontend/images/ic_bank.png" alt="" class="bank-image">
+                                    <div class="description">
+                                        <h3>PT. Andtrips</h3>
+                                        <p>
+                                            0856 9771 3553
+                                            <br> Bank Mandiri
+                                        </p>
+                                    </div>
+                                    <div class="clearfix">
+
+                                    </div>
+                                    <img src="frontend/images/ic_bank.png" alt="" class="bank-image">
+                                    <div class="description">
+                                        <h3>PT. Andtrips</h3>
+                                        <p>
+                                            9771 3553
+                                            <br> Bank Central Asia
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- cara buat tombol JOIN NOW -->
+                        <div class="payment-container">
+                            <a href="success.html" class="btn btn-block btn-i-have-payment mt-3 py-2">
+                                I Have Made Payment
+                            </a>
+                        </div>
+                        <!-- membuat tombol cancel booking -->
+                        <div class="text-center mt-3">
+                            <!-- pakai text-muted karena tulisan abu2 -->
+                            <a href="details.html" class="text-muted">
+                                Cancel Booking
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- untuk buat footer -->
+    <footer class="section-footer mt-5 mb-4 border-top ">
+        <div class="container pt-5 pb-5 ">
+            <div class="row justify-content-center ">
+                <div class="col-12 ">
+                    <div class="row ">
+                        <!-- ini bagian features -->
+                        <div class="col-12 col-lg-3 ">
+                            <h5>FEATURES</h5>
+                            <!-- buat list tanpa ada tanda titiknya di depan -->
+                            <ul class="list-unstyled ">
+                                <li><a href="# ">Reviews</a></li>
+                                <li><a href="# ">Community</a></li>
+                                <li><a href="# ">Social Media Kit</a></li>
+                                <li><a href="# ">Affiliate</a></li>
+                            </ul>
+                        </div>
+                        <!-- ini bagian account -->
+                        <div class="col-12 col-lg-3 ">
+                            <h5>ACCOUNT</h5>
+                            <!-- buat list tanpa ada tanda titiknya di depan -->
+                            <ul class="list-unstyled ">
+                                <li><a href="# ">Refund</a></li>
+                                <li><a href="# ">Security</a></li>
+                                <li><a href="# ">Reward</a></li>
+                            </ul>
+                        </div>
+                        <!-- ini bagian company -->
+                        <div class="col-12 col-lg-3 ">
+                            <h5>COMPANY</h5>
+                            <!-- buat list tanpa ada tanda titiknya di depan -->
+                            <ul class="list-unstyled ">
+                                <li><a href="# ">Career</a></li>
+                                <li><a href="# ">Help Center</a></li>
+                                <li><a href="# ">Media</a></li>
+
+                            </ul>
+                        </div>
+                        <!-- ini bagian get connected -->
+                        <div class="col-12 col-lg-3 ">
+                            <h5>GET CONNECTED</h5>
+                            <!-- buat list tanpa ada tanda titiknya di depan -->
+                            <ul class="list-unstyled ">
+                                <li><a href="# ">Jakarta Barat</a></li>
+                                <li><a href="# ">Indonesia</a></li>
+                                <li><a href="# ">Whatsapp</a></li>
+                                <li><a href="# ">support@email.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- untuk buat copyright -->
+        <!-- fluid supaya dari kiri ke kanan full-->
+        <div class="container-fluid ">
+            <div class="row border-top justify-content-center align-items-center pt-4 ">
+                <div class="col-auto text-gray-500 font-weight-light ">
+                    2020 Copyright Andtrips - All Rights reserved - Made in Jayapura
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jquery untuk javascript -->
+    <script src="frontend/libraries/jquery/jquery-3.4.1.min.js "></script>
+    <!-- bootstrap javascript -->
+    <script src="frontend/libraries/bootstrap/js/bootstrap.js "></script>
+    <!-- untuk tampilan retina display-->
+    <script src="frontend/libraries/retina/retina.min.js "></script>
+    <!-- ini untuk ngeload xzoom yang di dpt dari download di https://payalord.github.io/xZoom/-->
+    <script src="frontend/libraries/xzoom/xzoom.min.js "></script>
+    <!-- untuk manggil date gijgo -->
+    <script src="frontend/libraries/gijgo/js/gijgo.min.js"></script>
+
+    <!-- manggil jquery untuk ngeload dengan xzoom gambar -->
+    <script>
+        $(document).ready(function () {
+            $('.xzoom, .xzoom-gallery').xzoom({
+                zoomWidth: 500,
+                tittle: false,
+                tint: '#333',
+                xoffset: 15
+            });
+            // untuk menggunakan date dan manggil gijgo
+            $('.datepicker').datepicker({
+                uiLibrary: 'bootstrap4',
+                icons: {
+                    rightIcon: '<img src="frontend/images/ic_doe.png"/>'
+                }
+            })
+        });
+    </script>
+
+</body>
+
+</html>
+
+</html>
